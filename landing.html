@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/magaribi.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/magaribi.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" 
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"/>
+    <link href="http://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/avantgarde-md-bt" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>MIH</title>
+  </head>
+  <body class="text-gray-800 antialiased" style="font-family: 'Segoe UI'; scroll-behavior: smooth; overflow-x: hidden;">
+    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 sticky" style="background-color: #141414;">
+      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+          <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+            href="#">
+            <img src="./assets/img/magaribi.png" alt="logo" style="width: 150px;">
+
+          </a>
+            <button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')">
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- navbar list -->
+        <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+          id="example-collapse-navbar">
+
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+           
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center font-semibold"
+                href="#">
+              <span class="inline-block ml-2">Home</span></a>
+            </li>
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center font-semibold"
+                href="#">
+              <span class="inline-block ml-2">About</span></a>
+            </li> 
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center font-semibold"
+                href="#">
+              <span class="inline-block ml-2">Membership</span></a>
+            </li> 
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center font-semibold"
+                href="#">
+              <span class="inline-block ml-2">Events</span></a>
+            </li> 
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center font-semibold"
+                href="#">
+              <span class="inline-block ml-2">Partners</span></a>
+            </li> 
+             <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center font-semibold"
+                href="#">
+              <span class="inline-block ml-2">Blog</span></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+    
+    <!-- Main -->
+    <main>
+      <div class="relative pt-16 pb-32"
+        style="min-height: 100vh;">
+        <div class="absolute top-0 w-full h-full bg-center bg-cover"
+          style='background-image: url("https://images.unsplash.com/photo-1496065187959-7f07b8353c55?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=750&mp;q=80");'>
+          <span id="blackOverlay" class="w-full h-full absolute"></span>
+        </div>
+        <div class=" relative mx-auto" data-aos="fade-in">
+          <div class="flex flex-wrap">
+            <div class="w-full md:w-6/12 px-4 ml-8 mr-auto text-left">
+              <!-- <div class="pr-12"> -->
+              <div class="mt-8">
+                <h1 class="text-white text-6xl" style="font-family: 'AvantGarde Md BT';">
+                   Incubate Thoughts
+                </h1>
+                <p class="mt-4 text-sm text-gray-300" style="font-family: 'AvantGarde Md BT'; font-style: italic;">
+                  Bringing Reality to the <span style="background-color: #E64B22; color: white;">products and services </span>of our ecosystem.
+                </p>
+                <p class="mt-4 text-white text-sm lg:text-gray-300 mt-16 mr-auto">
+                Practical solutions that embrace human values and above all business ethics. 
+                At MIH, we incubate thoughts and don’t shy away to be crazy about ideas, but we also focus on bringing to 
+                reality the products and services of our ecosystem by simplifying the entrepr
+                </p>
+                <div class="flex">
+                  <div>
+                    <a href="#" class=" text-white font-semibold text-xs cursor-pointer inline-block mt-8"
+                    style="color: #E64B22; font-style: italic;">Join Our Community</a>
+                    <div class="line rounded-lg"></div>
+                  </div>
+                  <div class="mt-8 ml-2" style="color: #E64B22;">
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                </div>
+                <!-- <a href="#" class="bg-transparent text-white font-semibold hover:text-white
+                p-3 border hover:border-transparent rounded cursor-pointer inline-block mt-4 btn"
+                >Join Our Community</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- About  -->
+      <section class="pb-20 bg-white -mt-32">
+         <div class="flex flex-wrap items-center mt-32">
+            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+              <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
+              >
+                <i class="fas fa-user-friends text-xl" style="color: #E64B22;"></i>
+              </div>
+              <h3 class="text-3xl mb-2 font-semibold leading-normal" style="color: #E64B22; font-family: 'AvantGarde Md BT';" data-aos="zoom-in">
+                Get to know us
+              </h3>
+              <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700" data-aos="zoom-in">
+                We dream of changing the world through innovative and practical solutions that embrace human values and above all business ethics. 
+                At MIH, we incubate thoughts and don’t shy away to be crazy about ideas, but we also focus on bringing to 
+                reality the products and services of our ecosystem by simplifying the entrepreneurship skills and training thinkers.
+              </p>
+            </div>
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto mt-12" data-aos="fade-down">
+              <div style="background-color: #E64B22;"
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg">
+                <img
+                  alt="..."
+                  src="./assets/img/group.jpg"
+                  class="w-full align-middle rounded-t-lg"/>
+                <blockquote class="relative p-8 mb-4">
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px;">
+                    <polygon
+                      points="-30,95 583,95 583,65"
+                      class="fill-current"style="color: #E64B22"></polygon>
+                      
+                  </svg>
+                  <h4 class="text-xl font-bold text-white">
+                    Top Notch Services
+                  </h4>
+                  <p class="text-md font-light mt-2 text-white">
+                    The Arctic Ocean freezes every winter and much of the
+                    sea-ice then thaws every summer, and that process will
+                    continue whatever happens.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <!-- About Cards -->
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos="zoom-in-up">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                  <img src="./assets/img/about-icon-22.png" alt="">
+                  </div>
+                  <h6 class="text-xl font-semibold" style="font-family: 'AvantGarde Md BT'; color: #E64B22">Outsourcing</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    At MIH, we harness our talents to help business achieve their corporate goals we are strong in converting business 
+                   processes in an easy automated solution to achieve optimal productivity and efficiency.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos="zoom-in-down">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                    <img src="./assets/img/about-icon-21.png" alt="">
+                  </div>
+                  <h6 class="text-xl font-semibold" style="font-family: 'AvantGarde Md BT'; color: #E64B22;">Enterpreneurship Training</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Innovation in itself is incomplete without imparting the necessary skills to commercialize and monetize the inventions. At MIH, 
+                    we partner with great industry players for knowledge transfer to enable the innovators refine and polish their business skills.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos="zoom-in-up">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                    <img src="./assets/img/about-icon-23.png" alt="">
+                  </div>
+                  <h6 class="text-xl font-semibold" style="font-family: 'AvantGarde Md BT'; color: #E64B22">Code Kids</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Exposing kids on the basics of coding is sure step in revolutionizing their thought process to be great thinkers. 
+                    At MIH, early stage code training to young minds prepares the next thinkers for our ecosystem, we think about a conveyor belt of next startup champions.
+                  </p>
+                </div>
+              </div>
+            </div>
+             <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos="zoom-in-up">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                    <img src="./assets/img/about-icon-4.png" alt="">
+                  </div>
+                  <h6 class="text-xl font-semibold" style="font-family: 'AvantGarde Md BT'; color: #E64B22">Innovative Challanges</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    MIH challenge is for novel idea generation for budding entrepreneurs and innovators who come up with solutions 
+                    that change the world and above all help the government and private sector in realizing the big four agenda.
+                    We intend to focus on health, manufacturing, agriculture and Art.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 px-4 mr-auto ml-auto">
+                <div>
+                  <img src="./assets/img/setlight.png" alt="" data-aos="zoom-out-up">
+                </div>
+            </div> 
+          </div> 
+        </div>
+      </section>
+
+
+      <!-- Membership -->
+       <section class="relative py-24 text-white" style="background-color:#BE1E2D;">
+        <div>
+          <h3 class="pb-16 text-4xl" style="font-family: 'AvantGarde Md BT'; margin-left: 60px;">Membership</h3>
+        </div>
+        <div class="container mx-auto px-4">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="fade-up">
+              <img
+                alt="..."
+                class="shadow-lg rounded-lg"
+                src="./assets/img/membership.jpg"
+              />
+            </div>
+            <div class="w-full md:w-6/12 ml-auto px-4 mr-4" data-aos="fade-down">
+                <h3 class="text-3xl font-semibold">A growing company</h3>
+                <p class="mt-4 text-lg leading-relaxed text-white">
+                  The extension comes with three pre-built pages to help you get<br>
+                  started faster. You can change the text and images and you're<br>
+                  good to go.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Booking section -->
+
+        <div class="flex flex-wrap mt-12 justify-center">
+            <div class="w-full lg:w-4/12 px-4 text-center" data-aos="zoom-in-up">
+              <h6 class="text-2xl mt-5 font-semibold text-white">
+                Flexi Space
+              </h6>
+              <p class="mt-2 mb-12 text-white">
+                Charged at Kshs 500 per day, 8am-6pm Working space High speed unlimited internet Meeting room
+              </p>
+              <div class="">
+              <a class="p-3 bg-white hover:bg-red-500 text-black hover:text-white shadow-lg font-bold transition duration-500 ease-in-out rounded-lg" href="#">Get Now</a>
+              </div>
+            </div>
+            <div class="w-full lg:w-4/12 px-4 text-center" data-aos="zoom-in-up">
+              <h5 class="text-2xl mt-5 font-semibold text-white">
+                Dedicated Space
+              </h5>
+              <p class="mt-2 mb-8">
+                Charged at Kshs 5000 per month, 8am-6pm Dedicated working space High speed unlimited internet
+                 Meeting room Subsidized reprographic services
+              </p>
+              <a class="p-3 bg-white hover:bg-red-500 text-black hover:text-white shadow-lg font-bold rounded-lg transition duration-500 ease-in-out" href="#">Get Now</a>
+            </div>
+          </div>
+      </section>
+<!-- Events -->
+ <section class="pb-32 relative block">
+        <div class="container mx-auto px-4 pt-24 lg:pb-20">
+          <div class="flex flex-wrap text-center justify-center">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold" style="color: #E64B22; font-family: AvantGarde Md BT;">Events</h2>
+              <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+                We bring together thinkers to network, mentor and create industry collaborations with other startup accelerators
+              </p>
+            </div>
+          </div>
+          <!-- Event 1 -->
+      <div class="mt-8 flex flex-wrap mt-12 justify-center m-4/12">
+          <!-- Cards Go here -->
+          <div class="hover:shadow-lg bg-gray-100 rounded overflow-hidden shadow relative m-4"  data-aos="fade-up">
+              <img src="./assets/img/event1.jpg" alt="stew" class="w-full sm:h-48 object-cover" style="height: 250px;">
+              <div class="m-4">
+                  <span class="font-bold" style="font-family: 'AvantGarde Md BT';">HACK001</span>
+                  <span class="block text-gray-500 text-sm">At Masinde Muliro University</span>
+              </div>
+              <div class="bg-gray-200 text-white text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2" style="color:#E64B22">
+                  <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>25TH JULY 2020</span>
+              </div>
+          </div>
+  <!-- Event 2 -->
+          <div class="hover:shadow-lg bg-gray-100 rounded overflow-hidden shadow relative m-4" data-aos="fade-down">
+              <img src="./assets/img/event2.jpg" alt="stew" class="w-full sm:h-48 object-cover"style="height: 250px;">
+              <div class="m-4">
+                  <span class="font-bold" style="font-family: 'AvantGarde Md BT';">HACK002</span>
+                  <span class="block text-gray-500 text-sm">At Masinde Muliro Univerity</span>
+              </div>
+              <div class="bg-gray-100 text-white text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2" style="color: #E64B22;">
+                  <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>04TH JAN 2022</span>
+              </div>
+          </div>
+            <!-- Event 3 -->
+          <div class="hover:shadow-lg bg-gray-100 rounded overflow-hidden shadow relative m-4" data-aos="fade-up">
+              <img src="./assets/img/event1.jpg" alt="stew" class="w-full sm:h-48 object-cover" style="height: 250px;">
+              <div class="m-4">
+                  <span class="font-bold" style="font-family: 'AvantGarde Md BT';">HACK003</span>
+                  <span class="block text-gray-500 text-sm">At Masinde Muliro Univerity</span>
+              </div>
+              <div class="bg-gray-100 text-white text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2" style="color: #E64B22;">
+                  <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span >15TH AUG 2022</span>
+              </div>
+          </div>
+          </div>
+          <div class="mt-16 text-center ">
+            <a href="#" class="btn2 mt-2 py-3 px-4 text-black shadow-lg font-semibold rounded-lg text-white">All Events</a>
+          </div>
+      </section>
+
+      <!-- Partners -->
+      <section class="relative block py-24">
+        <div class="absolute top-0 w-full h-full bg-center bg-cover" 
+        style='background-image: url("./assets/img/Hands.jpg"); z-index: -1;'>
+        <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+        </div>
+        <div>
+          <div class=" text-center">
+            <h1 class="text-4xl md:text-center mb-12" style="color: #E64B22; font-family: 'AvantGarde Md BT';">Partners</h1>
+          </div>
+          <div class="text-white m-4 rounded-lg flex justify-center flex-wrap">
+            <div class="text-xl rounded-lg p-4 text-center">
+              <h2 style="font-style: italic;">"If you want to go fast go alone, if you want to go far go together." <br>
+              <span class="font-semibold" style="font-style: normal; color: #E64B22;">- African proverb.</span></h2>
+              <div class="flex justify-center mt-8">
+              <img src="./assets/img/Illustrator.svg" style="width: 200px;" data-aos="fade-in">
+              </div>
+              <div class="mt-12 text-white">
+                <p>At MIH, we believe in building partnerships and teams<br> to actualize our main goal and make an impact in the society.</p>
+              </div>
+            </div>  
+          </div>
+          <div>
+            <div class="flex flex-wrap justify-center mt-24">
+              <img src="./assets/img/Daktari-Online-logo-FA-300x83.jpg" alt="" class="m-4 rounded-lg shadow-lg" data-aos="zoom-in">
+              <img src="./assets/img/WhatsApp-Image-2018-07-01-at-5.51.22-PM-150x150.jpeg" alt="" class="ml-8 rounded-lg shadow-lg" data-aos="zoom-in">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog -->
+       <section class="pt-20 pb-20" style="background-color: #faf9f9;">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-center text-center mb-24">
+            <div class="w-full lg:w-6/12 px-4" data-aos="fade-in">
+              <h2 class="text-4xl" style="font-family:'AvantGarde Md BT'; color: #E64B22;">Blog</h2>
+              <p class="text-lg leading-relaxed m-4 text-gray-600">
+                According to the National Oceanic and Atmospheric
+                Administration, Ted, Scambos, NSIDClead scentist, puts the
+                potentially record maximum.
+              </p>
+            </div>
+          </div>
+          <!-- blog 1 -->
+          <div class="md:flex justify-center text-center" >
+            <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4 ml-2 mr-2 flex flex-col min-w-0 break-words bg-white rounded-lg shadow-lg py-2" data-aos="flip-left"
+             style="width: 300px; height: 350px;">
+              <div class="px-2 py-2">
+                <img
+                  alt="..."
+                  src="./assets/img/team-1-800x800.jpg"
+                  class="shadow-lg rounded-full max-w-full mx-auto"
+                  style="max-width: 100px;"/>
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-semibold">Ryan Tompson</h5>
+                  <p class="mt-1 text-sm text-gray-500 mb-8">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+                  </div>
+                    <a href="https://medium.com/@magharibihub" class="mt-2 py-3 px-4 text-black font-semibold hover:shadow-lg transition duration-500" style="color: #E64B22;">See more</a>
+              </div>
+            </div>
+            <!-- Blog 2 -->
+            <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4 ml-2 mr-2 flex flex-col min-w-0 break-words bg-white rounded-lg shadow-lg py-4 mr-4" data-aos="flip-left"
+            style="width: 300px; height: 350px;">
+              <div class="px-2 py-2">
+                <img
+                  alt="..."
+                  src="./assets/img/team-3-800x800.jpg"
+                  class="shadow-lg rounded-full max-w-full mx-auto"
+                  style="max-width: 100px;"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-semibold">Alexa Smith</h5>
+                  <p class="mt-1 text-sm text-gray-500 mb-8">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                  </p>
+                </div>
+                    <a href="https://medium.com/@magharibihub/second-post-58712c802dd6" class="mt-2 py-3 px-4 text-black font-semibold hover:shadow-lg transition duration-500" style="color: #E64B22;">See more</a>
+              </div>
+            </div>
+            <!-- Blog 3 -->
+            <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4 flex flex-col min-w-0 break-words bg-white rounded-lg shadow-lg py-2" data-aos="flip-left"
+            style="width: 300px; height: 350px;">
+              <div class="px-2 py-2">
+                <img
+                  alt="..."
+                  src="./assets/img/team-4-470x470.png"
+                  class="shadow-lg rounded-full max-w-full mx-auto"
+                  style="max-width: 100px;"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-semibold">Jenna Kardi</h5>
+                  <p class="mt-1 text-sm text-gray-500 mb-8">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                  </p>
+                </div>
+                    <a href="https://medium.com/@magharibihub/magharibi-hub-9907dc1e1679" class="mt-2 py-3 px-4 text-black font-semibold hover:shadow-lg transition duration-500" style="color: #E64B22;">See more</a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-16">
+            <a href="https://medium.com/@magharibihub" class=" btn2 mt-2 py-3 px-4 shadow-lg font-semibold rounded-lg text-white hover:text-black hover:bg-white">All Blogs</a>
+          </div>
+          </div>
+      </section>
+
+  
+    </main>
+    <footer class="relative bg-gray-300 pt-8 pb-6"style="background-color: #141414;">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl font-semibold"style="color:#E64B22">Let's keep in touch!</h4>
+            <h5 class="text-lg mt-0 mb-2 text-white" >
+              Find us on any of these platforms.
+            </h5>
+            <div class="mt-6 mb-8">
+              <button style="background-color: #E64B22;"
+                class="shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button">
+                <i class="flex fab fa-twitter"></i></button>
+              <button style="background-color: #E64B22;"
+                class="shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button">
+                <i class="flex fab fa-facebook-square"></i></button>
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span class="block uppercase text-white text-sm font-semibold mb-2">
+                  Useful Links
+                </span>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"
+                      href="">About Us</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"
+                      href="">Blog</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"
+                      href="">Membership</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"
+                      href="">Events</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-4/12 px-4">
+                <span class="block uppercase text-white text-sm font-semibold mb-2">Other Resources</span>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"
+                      href="#">+254 755 777 778</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"
+                      href="#">info@mih.co.ke <br>P.O. Box 158 – 50100,<br>Kakamega</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-700 hover:text-white font-semibold block pb-2 text-sm"
+                      href="">Mega Mall,Kakamega<br>2nd Floor</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-400" />
+        <div class="flex flex-wrap items-center md:justify-between justify-center">
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-white font-semibold py-1">
+              Copyright <span style="color: #E64B22;">©</span> 2021 By Magaribi Innovation Hub || All Rights Reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!-- Ham -->
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+  <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" 
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+      AOS.init({
+        delay: 200,
+        duration: 1000,
+        once: false
+    });
+  </script>
+</html>

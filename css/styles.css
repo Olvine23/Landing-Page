@@ -1,0 +1,31 @@
+.btn{
+    border: 1px solid #E64B22; 
+    color: #E64B22;
+}
+.btn:hover{
+    background-color: #E64B22;
+    color: white;
+    transition: ease-in-out .5s;
+}
+.btn2{
+    background-color: #E64B22;
+}
+.btn2:hover{
+    border: 1px solid #E64B22;
+    background-color: white;
+    color: #E64B22;
+    transition: ease-in-out .2s;
+}
+.line{
+    content: '';
+    width: 105px;
+    height: 3px;
+    background-color: #E64B22;
+}
+.glass{
+    backdrop-filter: blur(100px);
+}
+
+.active{
+    color: #E64B22;
+}
