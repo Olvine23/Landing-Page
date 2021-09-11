@@ -15,9 +15,11 @@
     <link href="http://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/avantgarde-md-bt" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>MIH</title>
   </head>
-  <body class="text-gray-800 antialiased" style="font-family: 'Segoe UI'; overflow-x: hidden;">
+  <div class="test">
+  <body class=" text-gray-800 antialiased" style="font-family: 'Segoe UI'; overflow-x: hidden;">
     <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3">
       <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
@@ -80,7 +82,7 @@
           style='background-image: url("https://images.unsplash.com/photo-1498409785966-ab341407de6e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=760&q=80"); z-index: -50;'>
           <span id="blackOverlay" class="w-full h-full absolute bg-black opacity-50"></span>
         </div>
-        <div class="w-full md:w-6/12 px-4 mr-auto ml-auto mt-8">
+        <div class=" animate__animated animate__backInRight w-full md:w-6/12 px-4 mr-auto ml-auto mt-8">
               <h3 class="text-3xl mb-2 font-semibold leading-normal text-center" style="color: #E64B22; font-family: 'AvantGarde Md BT';">
                 Get to know us
               </h3>
@@ -91,8 +93,8 @@
               </p>
         </div>
             
-        <div class="mx-auto px-4">
-          <div class="container grid lg:grid-cols-4">
+        <div class="mx-auto px-4 animate__animated animate__backInRight">
+          <div class="  container grid lg:grid-cols-4">
             <div class="lg:pt-8 pt-6 px-4 text-center">
               <div class="relative min-w-0 break-words w-full shadow-lg rounded-lg glass">
                 <div class="px-4 py-5 flex-auto">
@@ -152,5 +154,27 @@
           </div> 
           </div>
       </div>
+    </div>
+    <div class="overlay"></div>
   </body>
+
+  <!-- Ham -->
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+  <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" 
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+      AOS.init({
+        delay: 200,
+        duration: 1000,
+        once: false
+    });
+  </script>
   </html>
